@@ -1,0 +1,173 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins';
+}
+body
+{
+    background: linear-gradient(to right , #FF9D9C,#FFCEA6);
+}
+.Main
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+.Music-App
+{
+    background-color: white;
+    width: 50vh;
+    height:fit-content;
+    border-radius: 5px;
+    padding: 5px;
+}
+.App-Name
+{
+    background-color: black;
+    width: fit-content;
+    color: white;
+    padding: 5px 5px;
+    border-radius: 5px;
+}
+.App-Name img
+{
+    height: 20px;
+    width: 20px;
+}
+
+/* ======================= */
+
+.Music-Data
+{
+    margin: 2rem 0px 1rem 0px;
+    text-align: center;
+}
+.Music-Name , .Singer-Name
+{
+    padding: .5rem 0px;
+}
+
+/* ======================= */
+.Image-Container
+{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.Image
+{
+    width: 12rem;
+    height: 12rem;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 3px 3px 5px #393939;
+    overflow: hidden;
+}
+.Image img
+{
+    width: 100%;
+    height:100%;
+    border-radius: 50%;
+    object-fit: cover;
+    transform: scale(1);
+
+    transition: all .2s ease-in-out;
+    box-shadow: 3px 3px 5px #393939;
+}
+.Image img:hover
+{
+    transform: scale(1.1);
+}
+.Anime
+{
+    animation-name: Harry;
+    animation-timing-function:linear;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-fill-mode: forwards;
+}
+.Controls
+{
+    display: flex;
+    justify-content: center;
+    margin: 1rem 0px;
+    padding: 1rem 0px;
+    grid-gap: 3rem;
+}
+.Controls i
+{
+    font-size: x-large;
+    color: #FF9D9C;
+}
+.Time
+{
+    display: flex;
+    justify-content: space-between;
+}
+.Slider
+{
+    padding: 0px 10px;
+}
+.Runner
+{
+    margin-top: 10px;
+}
+.A
+{
+    background-color: rgb(122, 122, 122);
+    width: 100%;
+    height: 5px;
+    border-radius: 10px;
+    position: relative;
+}
+.B
+{
+    position: absolute;
+    width: 0%;
+    height: 100%;
+    border-radius: inherit;
+    background-color: #FF9D9C;
+}
+.Range
+{
+    width: 80%;
+    text-decoration: none;
+    margin: 0px 10px;
+
+    appearance: none;
+    height: 5px;
+    background: #FF9D9C;
+    border-radius: 5px;
+}
+.Volume
+{
+    display: flex;
+    align-items: center;
+    padding: 10px 0px;
+}
+.Volume i
+{
+    color: #FF9D9C;
+}
+@keyframes Harry
+{
+    0%
+    {
+        transform: rotate(0deg);
+    }
+    100%
+    {
+        transform: rotate(360deg);
+    }
+}
+
+@media(max-width:360px)
+{
+    .Music-App
+    {
+        width: 80vw;
+    }
+}
